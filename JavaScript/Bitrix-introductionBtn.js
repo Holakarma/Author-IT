@@ -59,6 +59,30 @@ document.addEventListener('DOMContentLoaded', ()  => {
                     b.classList.add('none');
                 }
             });
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+            })
+        });
+    });
+    bitrixBtnAll.forEach(btn => {
+        btn.addEventListener('touch', () => {
+            const btnData = btn.getAttribute('data-introduction');
+            bitrixAll.forEach(b => {
+                console.log(bitrixAll);
+                const bitrixData = b.getAttribute('data-introduction');
+                if (btnData === bitrixData) {
+                    b.classList.remove('none');
+                }else{
+                    b.classList.add('none');
+                }
+            });
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+            })
         });
     });
 })
