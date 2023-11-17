@@ -6,12 +6,14 @@ import swiperWeProud from './modules/swiper-we-proud.js';
 import aboutus from './modules/AboutUs.js';
 import services from './modules/services.js';
 import swiperCases from './modules/swiper-Cases.js';
-import cases from './modules/Cases.js';
+import cases from './modules/cases.js';
 import filterCases from './modules/filterCases.js';
 import btnUp from './modules/btn-up.js';
 import bitrixPage from './modules/bitrix-page.js';
+import benefits from './modules/benefits.js';
 
 // btnUp();
+benefits();
 filterCases();
 bitrixPage();
 cases();

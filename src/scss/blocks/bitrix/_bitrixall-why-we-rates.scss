@@ -15,7 +15,7 @@
 
 .BitrixPortal__rate__descr {
     color: #232323;
-    font-family: "Unbounded-Regular"; 
+    font-family: "Unbounded-Black"; 
     font-size: 16px;
     font-weight: 700;
     margin-top: 16px;
@@ -23,12 +23,11 @@
 
 .BitrixPortal__rate__price {
     margin-top: 16px;
-    font-size: 19px;
 }
 
 .BitrixPortal__rate__typeDescr-typePrice {
     display: flex;
-    gap: 54px;
+    gap: 16px;
 }
 
 .BitrixPortal__rate__typeName {
@@ -39,24 +38,16 @@
 }
 
 .BitrixPortal__container-rates__support {
-    margin-bottom: 0px;
+    height: 198px; 
+    margin-bottom: 18px;
 }
 
 .BitrixPortal__container-rates__support-scale {
-    padding: 0 53px 0 79px;
-    justify-content: inherit;
-    gap: 185px;
-}
-
-.BitrixPortal__container-rates__support-scale-4col {
-    display: flex;
-    justify-content: space-between;
-    width: inherit;
+    padding: 0 74px 0 72px;
 }
 
 .BitrixPortal__container-rates__support-scale-3col {
-    padding: 0 53px 0 315px;
-    gap: 0;
+    padding: 0 74px 0 249px;
 }
 
 .BitrixPortal__rates-services__btn {
