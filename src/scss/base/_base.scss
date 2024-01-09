@@ -9,7 +9,7 @@ html {
 }
 
 body::-webkit-scrollbar {
-    width: 1vw;               /* width of the entire scrollbar */
+    width: .8vw;               /* width of the entire scrollbar */
 }
   
 body::-webkit-scrollbar-track {
@@ -218,7 +218,7 @@ main {
 }
 
 .Bitrix__container-rates-services {
-    margin-top: 54px;
+    margin-top: 34px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -251,6 +251,7 @@ main {
         flex-direction: column;
         gap: 15px;
         align-items: flex-start;
+        padding: 28px 31px;
     }
     .Bitrix__container-rates-services {
         margin: 0;
@@ -268,6 +269,11 @@ main {
     }
     .rates-none992 {
         display: flex !important;
+    }
+    body::-webkit-scrollbar-thumb {
+        background-color: #0A7272;    /* color of the scroll thumb */
+        border-radius: 10px;       /* roundness of the scroll thumb */
+        border: .2px solid #181818;
     }
 }
 
@@ -287,7 +293,7 @@ main {
         width: 360px;
     }
     .Bitrix__black-bg {
-        padding: 33px 2px;
+        padding: 28px 2px;
     }
     .Bitrix__container-rates-services {
         width: auto;

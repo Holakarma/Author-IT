@@ -24,6 +24,15 @@ function cases() {
         function hideCase() {
             sectionAfterDisplay.classList.add('none');
             sectionDisplay.classList.remove('none');
+            scroller(scrollSaver);
+        }
+
+        function scroller(coord) {
+            window.scrollTo({
+                top: coord,
+                left: 0,
+                behavior: 'auto'
+            })
         }
 
         // Обработчик события клика на кнопку возврата 
@@ -37,11 +46,6 @@ function cases() {
                     window.history.pushState({}, '', url.toString());
                 }
                 hideCase();
-                window.scrollTo({
-                    top: scrollSaver,
-                    left: 0,
-                    behavior: 'auto'
-                });
             })
         });
 
@@ -49,16 +53,12 @@ function cases() {
 
         history.pushState({}, null, '');
         window.onpopstate = function(e) {
-            history.pushState({}, null, '');
-            e.preventDefault();
-            hideCase();
-            window.scrollTo({
-                top: scrollSaver,
-                left: 0,
-                behavior: 'auto'
-            });
+            if (!sectionAfterDisplay.classList.contains('none')) {
+                history.pushState({}, null, '');
+                // e.preventDefault();
+                setTimeout(hideCase, 10);
+            }
         }
-
     })
 }
 
